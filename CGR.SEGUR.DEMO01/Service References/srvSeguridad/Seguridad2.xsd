@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://11.162.108.89:8019/SrvTarea/Seguridad.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" />
+  <xs:element name="AccesoVerificar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="clave" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AccesoVerificarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AccesoVerificarResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioObtener">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipDoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrodoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuarioSession" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioObtenerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="UsuarioObtenerResult" nillable="true" type="q1:UsuarioBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRolListar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sistema" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="entidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ambito" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sector" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuarioSession" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRolListarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="UsuarioRolListarResult" nillable="true" type="q2:ArrayOfUsuarioRolBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRecursoListar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sistema" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="entidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ambito" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sector" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="menu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="login" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuarioSession" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRecursoListarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="UsuarioRecursoListarResult" nillable="true" type="q3:ArrayOfRecursoBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRolVerificar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="rol" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="entidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ambito" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sector" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sistema" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuarioSession" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRolVerificarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioRolVerificarResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRecursoVerificar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="recurso" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="entidad" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ambito" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sector" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sistema" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuarioSession" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioRecursoVerificarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UsuarioRecursoVerificarResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioSistemaObtener">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoUsuario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tipDoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="nrodoc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codigoSistema" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="usuarioSession" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="token" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UsuarioSistemaObtenerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="UsuarioSistemaObtenerResult" nillable="true" type="q4:UsuarioBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Seguridad" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="WSHttpBinding_ISeguridad_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://11.162.108.89:8019/SrvTarea/Seguridad.svc?xsd=xsd2" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://11.162.108.89:8019/SrvTarea/Seguridad.svc?xsd=xsd0" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://11.162.108.89:8019/SrvTarea/Seguridad.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISeguridad_AccesoVerificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:AccesoVerificar" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_AccesoVerificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AccesoVerificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioObtener_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioObtener" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioObtener_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioObtenerResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRolListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRolListar" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRolListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRolListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRecursoListar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRecursoListar" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRecursoListar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRecursoListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRolVerificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRolVerificar" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRolVerificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRolVerificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRecursoVerificar_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRecursoVerificar" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioRecursoVerificar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioRecursoVerificarResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioSistemaObtener_InputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioSistemaObtener" />
+  </wsdl:message>
+  <wsdl:message name="ISeguridad_UsuarioSistemaObtener_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UsuarioSistemaObtenerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISeguridad">
+    <wsdl:operation name="AccesoVerificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISeguridad/AccesoVerificar" message="tns:ISeguridad_AccesoVerificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISeguridad/AccesoVerificarResponse" message="tns:ISeguridad_AccesoVerificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioObtener">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISeguridad/UsuarioObtener" message="tns:ISeguridad_UsuarioObtener_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISeguridad/UsuarioObtenerResponse" message="tns:ISeguridad_UsuarioObtener_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRolListar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRolListar" message="tns:ISeguridad_UsuarioRolListar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRolListarResponse" message="tns:ISeguridad_UsuarioRolListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRecursoListar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRecursoListar" message="tns:ISeguridad_UsuarioRecursoListar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRecursoListarResponse" message="tns:ISeguridad_UsuarioRecursoListar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRolVerificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRolVerificar" message="tns:ISeguridad_UsuarioRolVerificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRolVerificarResponse" message="tns:ISeguridad_UsuarioRolVerificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRecursoVerificar">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRecursoVerificar" message="tns:ISeguridad_UsuarioRecursoVerificar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISeguridad/UsuarioRecursoVerificarResponse" message="tns:ISeguridad_UsuarioRecursoVerificar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioSistemaObtener">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISeguridad/UsuarioSistemaObtener" message="tns:ISeguridad_UsuarioSistemaObtener_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISeguridad/UsuarioSistemaObtenerResponse" message="tns:ISeguridad_UsuarioSistemaObtener_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSHttpBinding_ISeguridad" type="tns:ISeguridad">
+    <wsp:PolicyReference URI="#WSHttpBinding_ISeguridad_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AccesoVerificar">
+      <soap12:operation soapAction="http://tempuri.org/ISeguridad/AccesoVerificar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioObtener">
+      <soap12:operation soapAction="http://tempuri.org/ISeguridad/UsuarioObtener" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRolListar">
+      <soap12:operation soapAction="http://tempuri.org/ISeguridad/UsuarioRolListar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRecursoListar">
+      <soap12:operation soapAction="http://tempuri.org/ISeguridad/UsuarioRecursoListar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRolVerificar">
+      <soap12:operation soapAction="http://tempuri.org/ISeguridad/UsuarioRolVerificar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioRecursoVerificar">
+      <soap12:operation soapAction="http://tempuri.org/ISeguridad/UsuarioRecursoVerificar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UsuarioSistemaObtener">
+      <soap12:operation soapAction="http://tempuri.org/ISeguridad/UsuarioSistemaObtener" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Seguridad">
+    <wsdl:port name="WSHttpBinding_ISeguridad" binding="tns:WSHttpBinding_ISeguridad">
+      <soap12:address location="http://11.162.108.89:8019/SrvTarea/Seguridad.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://11.162.108.89:8019/SrvTarea/Seguridad.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

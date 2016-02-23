@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://11.162.108.89:8015/SrvTarea/Auditoria.svc?xsd=xsd1" namespace="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" />
+  <xs:element name="EventosAplicacionListar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="codigoSistema" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EventosAplicacionListarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="EventosAplicacionListarResult" nillable="true" type="q1:ArrayOfEventoAPP_BE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarAuditoria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="objEventoBE" nillable="true" type="q2:AuditoriaBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarAuditoriaResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="GuardarAuditoriaResult" nillable="true" type="q3:RespuestaBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarEvento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="objDato" nillable="true" type="q4:EventoBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuardarEventoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="GuardarEventoResult" nillable="true" type="q5:RespuestaBE" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" minOccurs="0" name="objDato" nillable="true" type="q6:EventoBE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

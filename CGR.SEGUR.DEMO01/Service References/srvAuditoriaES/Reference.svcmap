@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="139d7579-d1b5-4755-9af2-fad2a1d2d4e7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://11.162.108.89:8035/SrvEntidad/AuditoriaES.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AuditoriaES.xsd" MetadataType="Schema" ID="7fc8a7b1-11a0-4935-b70b-a08c18e804f4" SourceId="1" SourceUrl="http://11.162.108.89:8035/SrvEntidad/AuditoriaES.svc?xsd=xsd0" />
+    <MetadataFile FileName="AuditoriaES.disco" MetadataType="Disco" ID="21595691-9741-4398-b4e3-bd7f144ea503" SourceId="1" SourceUrl="http://11.162.108.89:8035/SrvEntidad/AuditoriaES.svc?disco" />
+    <MetadataFile FileName="AuditoriaES1.xsd" MetadataType="Schema" ID="5a50f9e5-f127-4103-bfc3-ca7fdb537083" SourceId="1" SourceUrl="http://11.162.108.89:8035/SrvEntidad/AuditoriaES.svc?xsd=xsd2" />
+    <MetadataFile FileName="AuditoriaES.wsdl" MetadataType="Wsdl" ID="ecf1f03e-7aad-40e0-a82b-4d143e0e93cb" SourceId="1" SourceUrl="http://11.162.108.89:8035/SrvEntidad/AuditoriaES.svc?wsdl" />
+    <MetadataFile FileName="AuditoriaES2.xsd" MetadataType="Schema" ID="01e380e7-fb82-43d4-a045-8c11d7f57b4b" SourceId="1" SourceUrl="http://11.162.108.89:8035/SrvEntidad/AuditoriaES.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CGR.SEGUR.BE" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="RespuestaBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ListaRetorno" nillable="true" type="tns:ArrayOfGenericoBE" />
+      <xs:element minOccurs="0" name="Mensaje" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Respuesta" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ValorRertono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RespuestaBE" nillable="true" type="tns:RespuestaBE" />
+  <xs:complexType name="ArrayOfGenericoBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GenericoBE" nillable="true" type="tns:GenericoBE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGenericoBE" nillable="true" type="tns:ArrayOfGenericoBE" />
+  <xs:complexType name="GenericoBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Dato" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GenericoBE" nillable="true" type="tns:GenericoBE" />
+  <xs:complexType name="EventoBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CAPP_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_EXCEPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_MENSAJE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_REQUEST_URL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_USUARIO_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_VALORES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NWEB_CODIGO" type="xs:int" />
+      <xs:element minOccurs="0" name="NWEB_TIPO_EVENTO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventoBE" nillable="true" type="tns:EventoBE" />
+  <xs:complexType name="ArrayOfEventoAPP_BE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EventoAPP_BE" nillable="true" type="tns:EventoAPP_BE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEventoAPP_BE" nillable="true" type="tns:ArrayOfEventoAPP_BE" />
+  <xs:complexType name="EventoAPP_BE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CAPP_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEVE_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEVE_DESCRIPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NWEB_TIPO_EVENTO" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EventoAPP_BE" nillable="true" type="tns:EventoAPP_BE" />
+  <xs:complexType name="AuditoriaBE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CAPP_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CAUDI_EST_EXITO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CEVE_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_EXCEPCION" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_IP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_MENSAJE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_REQUEST_URL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_USUARIO_ACCEDIDO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_USUARIO_CODIGO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CWEB_VALORES" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NWEB_CODIGO" type="xs:int" />
+      <xs:element minOccurs="0" name="NWEB_TIPO_EVENTO" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AuditoriaBE" nillable="true" type="tns:AuditoriaBE" />
+</xs:schema>

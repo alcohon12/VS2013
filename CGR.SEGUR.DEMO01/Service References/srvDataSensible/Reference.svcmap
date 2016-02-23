@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8d08e91d-01f3-4ffd-8076-41e6139d4471" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://11.162.108.89:8015/SrvTarea/Auditoria.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Auditoria.wsdl" MetadataType="Wsdl" ID="8c07af7f-e6b6-42e1-bf00-673bedfdd2ca" SourceId="1" SourceUrl="http://11.162.108.89:8015/SrvTarea/Auditoria.svc?wsdl" />
+    <MetadataFile FileName="Auditoria.xsd" MetadataType="Schema" ID="23b3bbfd-3c78-4dba-b349-02789251c885" SourceId="1" SourceUrl="http://11.162.108.89:8015/SrvTarea/Auditoria.svc?xsd=xsd1" />
+    <MetadataFile FileName="Auditoria1.xsd" MetadataType="Schema" ID="fcfa024e-691a-41b2-8e3d-a9dac2d94f50" SourceId="1" SourceUrl="http://11.162.108.89:8015/SrvTarea/Auditoria.svc?xsd=xsd0" />
+    <MetadataFile FileName="Auditoria.disco" MetadataType="Disco" ID="f4ae3d81-0571-4163-a63e-0c4f831e9a2e" SourceId="1" SourceUrl="http://11.162.108.89:8015/SrvTarea/Auditoria.svc?disco" />
+    <MetadataFile FileName="Auditoria2.xsd" MetadataType="Schema" ID="c40ed37f-5361-41d9-89a4-00ae0e4d0025" SourceId="1" SourceUrl="http://11.162.108.89:8015/SrvTarea/Auditoria.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
