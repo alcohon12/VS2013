@@ -8,6 +8,13 @@ Public Class Inicio
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         If Not Me.IsPostBack Then
             IniciarSistema()
+
+
+            'vicente
+
+
+
+
         End If
     End Sub
     Private Sub IniciarSistema()
